@@ -1,0 +1,92 @@
+body {
+   background-color: #f1faee;
+}
+
+button {
+   font-size: 30px;
+   background-color: #a8dadc;
+}
+
+h1, h2 {
+   color: #1d3557;
+}
+
+/* Example of IDs */
+#singup {
+   background-color: #1d3557;
+   color: #f1faee;
+}
+
+span {
+   color: #457b9d ;
+}
+
+/* Example of a class */
+.tag {
+   background-color: #e63946;
+   color: #f1faee;
+   font-size: 16px;
+}
+
+/* Example of descendant selector */
+.post a {
+   color: #457b9d;
+   text-decoration: none;
+}
+
+footer a {
+   color: #e63946;
+}
+
+/* Example of adjacent selector */
+input + button {
+   background-color: pink;
+}
+
+h2 + button {
+   font-size: 20px;
+   background-color: magenta;
+}
+
+/* Direct decendent of the footer */
+footer > a {
+   color: #1d3557
+}
+
+/* Examples of attribute selectors */
+input[type="search"] {
+   color: green;
+}
+/* 
+section[class="post"] { sau section.post{
+   background-color: purple;
+} */
+
+.post button:hover {
+   background-color: #e63946;
+   color: #f1faee;
+}
+
+.post a:hover {
+   text-decoration: underline;
+}
+
+.post button:active {
+   background-color: greenyellow;
+}
+
+.post:nth-of-type(3n) {
+   background-color: antiquewhite;
+}
+
+h2::first-letter {
+   font-size:50px;
+}
+
+p::first-line {
+   color: purple;
+}
+
+p::selection {
+   background-color: #ffbe0b;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+	<H1>Register</H1>
+	<form>
+
+		<label for="firstname">First Name:</label>
+		<input id="firstname" type="text" name="firstname" placeholder="John" required>
+		<label for="lastname">Last Name:</label>
+		<input id="lastname" type="text" name="lastname" placeholder="Smith" required>
+
+		<div>
+			<label for="male">Male</label>
+			<input id="male" type="radio" name="gender" value="male">
+			<label for="female">Female</label>
+			<input id="female" type="radio" name="gender" value="female">
+			<label for="other">Other</label>
+			<input id="other" type="radio" name="gender" value="other">
+		</div>
+
+		<label>
+			Email:
+			<input type="email" name="email" placeholder="your email" required>
+		</label>
+		
+		<label>
+			Password:
+			<input type="password" name="password" minlength="5" maxlength="10" required>
+		</label>
+		
+		<fieldset >
+			<legend>Birthday:</legend>
+
+			<label for="Month">Month:</label>
+			<select name="Month" id="Month">
+				<option selected disabled>Month</option>
+				<option>January</option>
+				<option>February</option>
+				<option>March</option>
+				<option>April</option>
+			</select>
+
+			<label for="Day">Day:</label>
+			<select name="Day" id="Day">
+				<option selected disabled>Day</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+			</select>
+
+			<label for="Year">Year:</label>
+			<select name="Year" id="Year">
+				<option selected disabled>Year</option>
+				<option>2020</option>
+				<option>2019</option>
+				<option>2018</option>
+				<option>2017</option>
+			</select>		
+		</fieldset>
+
+		<label for="terms">I agree to the terms and conditions</label>
+		<input id="terms" type="checkbox" name="terms" required>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

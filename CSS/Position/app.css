@@ -1,0 +1,45 @@
+div {
+   background-color: #283618;
+   height: 100px;
+   width: 100px;
+   margin: 10px;
+   border: 2px solid black;
+   display: inline-block;
+}
+
+
+#middle {
+   background-color: #2a9d8f;
+}
+
+#static #middle {
+   position: static;
+   top: 100px;
+}
+
+#relative #middle {
+   position: relative;
+   top: 50px;
+   left: 50px;
+}
+
+/* We define the section with a relative position so that the div position is relative to the parent(section) */
+#absolute {
+   position: relative;
+}
+
+#absolute #middle {
+   position: absolute;
+   bottom: 1px;
+}
+
+#fixed #middle {
+   position: fixed;
+   top: 50px;
+   left: 10px;
+}
+
+#sticky #middle {
+   position: sticky;
+   top: 10px;
+}
